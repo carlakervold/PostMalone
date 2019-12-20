@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/tour.css">
+  <link rel="stylesheet" href="style/generic.css">
+
+  <title>Tours - Post Malone</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="album.html">Music Gallery</a>
+      <a class="active" href="tour.html">Tours</a>
+      <a href="bio.html">Biography</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+
+
+
+    <h1>TOURS</h1>
+
+    <div class="tourgrid">
+
+      <section>
+        <h2>EUROPE </h2>
+        <a href="soon_to_be_announced/s_t_b_a.html"> <img src="img/tours/europelive.jpg" alt=""> </a>
+      </section>
+
+      <section>
+        <h2>AMERICA</h2>
+        <a href="soon_to_be_announced/s_t_b_a.html"> <img src="img/tours/america.jpg" alt=""> </a>
+
+      </section>
+
+      <section>
+        <h2>REST OF THE WORLD</h2>
+        <a href="soon_to_be_announced/s_t_b_a.html"> <img src="img/tours/rest_of_the_world.jpg" alt=""> </a>
+      </section>
+    </div>
+
+
+    <div class="what_we_offer">
+      <section>
+        <h1>WHAT TO EXPECT</h1>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/tours/offers/live.jpg" style="width:100%">
+            <div class="text">Extraordinary Live Performances</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/tours/offers/meet_greet.jpeg" style="width:100%">
+            <div class="text">Meet & Greet</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="img/tours/offers/ex_bar.jpg" style="width:100%">
+            <div class="text">Exclusive Bars</div>
+          </div>
+
+        </div>
+
+        <script>
+          var slideIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+              slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 3700); // Changes image every 3.7 seconds
+          }
+        </script>
+      </section>
+
+    </div>
+
+    <div class="prices">
+      <section>
+        <h1>PRICES</h1>
+        <ul>
+          <li>Standard Seated Ticket ($95)</li>
+          <li>Standing Ticket ($110)</li>
+          <li> 5 Minute Meet & Greet With Post Malone ($190)</li>
+          <li>15 Minute Meet & Greet ($250)</li>
+        </ul>
+      </section>
+    </div>
+
+    <section>
+      <h1>LATEST CONCERT</h1>
+      <p id="video_explain">Las Vegas September 2019</p>
+      <iframe id="video_concert" width="560" height="315" src="img/tours/videos/post_live.mp4" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="disclaimer">
+      <section>
+
+      </section>
+      <section>
+        <h1 id="TOS">TERMS OF SERVICE</h1>
+        <ol>
+          <li>We do not take any responsibility and we are not liable for any damage caused through use of products or services purchased through this website, be it indirect, special, incidental or consequential damages</li>
+          <li>We give no warranty and accepts no responsibility or liability for the accuracy or the completeness of the information and materials contained in this website.</li>
+          <li>This website also contains links to other internet sites. Such links are provided as an information service for the users of this website.</li>
+          <li>We offer a full 100% 30 day money back guarantee (unless stated otherwise "deal terms" section of a specific deal). Should there be any problems with a product or service purchased, or should you not be entirely satisfied, please
+            contact us to arrange this.</li>
+        </ol>
+      </section>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us </p>
+    <p>Post Malone Fan Club</p>
+    <p>Elias Smiths vei 15</p>
+    <p>1337 Sandvika</p>
+
+  </footer>
+</body>
+
+</html>

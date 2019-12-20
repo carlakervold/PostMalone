@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/bildeslide.css">
+  <link rel="stylesheet" href="style/generic.css">
+  <script src="java/postbilder.js" charset="utf-8"></script>
+  <title>Home - Post Malone</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="album.html">Music Gallery</a>
+      <a href="tour.html">Tours</a>
+      <a href="bio.html">Biography</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <section>
+        <h1 id="overskrift">POST MALONE</h1>
+        <img id="new_album_picture" src="img/albums/new_album/hollywood_bleeding_edit.jpg" alt="">
+        <a href="album.html">
+          <h2 id="out_now">NEW ALBUM OUT NOW!</h2>
+        </a>
+      </section>
+    </section>
+
+    <section>
+      <a href="album.html"> <img id="banner" src="img/albums/new_album/hollywoodbleeding_banner.png" alt=""> </a>
+      <img id="postgif" src="img/albums/hollywoodticket.jpg" alt="">
+
+    </section>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/portraits/studiopost.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/portraits/smilepost.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/portraits/postbeer.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active1";
+      }
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+          slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 3700);
+      }
+    </script>
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p>Contact us </p>
+    <p>Post Malone Fan Club</p>
+    <p>Elias Smiths vei 15</p>
+    <p>1337 Sandvika</p>
+    <img src="" alt="">
+
+  </footer>
+</body>
+
+</html>

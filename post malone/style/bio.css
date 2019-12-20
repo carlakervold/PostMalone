@@ -1,0 +1,150 @@
+body {
+  background-image: url("../img/biography/about_post_background_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#about_post {
+  color: white;
+  font-size: 6vw;
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: 7px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#general_info_header {
+  color: white;
+  font-size: 3vw;
+  margin-top: 200px;
+  text-align: left;
+  letter-spacing: 7px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-left: 70px;
+}
+
+.quote_sec p {
+  font-size: 25px;
+}
+
+.quote_sec {
+  margin-top: 80px;
+  margin-left: 110px;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.info_text {
+  margin-left: 70px;
+}
+
+#history {
+  font-size: 25px;
+  text-decoration: overline underline;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  background-color: #363537;
+  color: white;
+  top: 100000;
+  position: relative;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+footer p {
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url("../img/biography/background_ipad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .quote_sec {
+    margin-top: 80px;
+    margin-left: 70px;
+  }
+
+  #about_post {
+    color: white;
+    font-weight: bold;
+  }
+
+  .quote_sec p {
+    color: black;
+  }
+
+  .info_text {
+    grid-column: span 2;
+    margin-left: 70px;
+    color: black;
+    font-size: 3.2vw;
+    transition: 1s;
+  }
+
+  .info_text:hover {
+    background-color: #4B4E50;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("../img/biography/background_mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  #about_post {
+    color: white;
+    font-weight: bold;
+  }
+
+  #general_info_header {
+    font-size: 4.5vw;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .info_text {
+    grid-column: span 4;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .quote_sec {
+    margin-top: 10%;
+    margin-left: auto;
+  }
+
+  .quote_sec p {
+    color: white;
+    font-weight: bold;
+  }
+}

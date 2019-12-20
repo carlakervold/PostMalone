@@ -1,0 +1,48 @@
+nav {
+  background-color: #264653;
+  display: grid;
+  grid-template-columns: repeat(6, auto) 1fr;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  z-index: 1000;
+}
+
+nav a:hover:not(.active) {
+  background-color: #395662;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 30px;
+  font-family: monospace;
+}
+
+.active {
+  background-color: #23404C;
+}
+
+@media (max-width: 900px) {
+  nav {
+    position: relative;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
