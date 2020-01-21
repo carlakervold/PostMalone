@@ -75,3 +75,8 @@ footer p {
     font-size: 40px;
   }
 }
+@media (max-width:600px){
+  body{
+    font-family: serif;
+  }
+}
